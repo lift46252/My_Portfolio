@@ -1,0 +1,305 @@
+@font-face 
+    font-family: "Bazar"
+    src: url("../fonts/Bazar/Bazar.ttf")
+    font-family: "Oswald"
+    src: url("../fonts/Oswald/Oswald.ttf")
+    font-family: "RobotoSlab"
+    src: url("../fonts/RobotoSlab/RobotoSlab.ttf")
+    font-family: "RobotoSlabBold"
+    src: url("../fonts/RobotoSlab/RobotoSlab.ttf")
+    font-family: "SeasideResortNF"
+    src: url("../fonts/SeasideResortNF/SeasideResortNF.ttf")
+$centralization: 0 auto
+=startsection()
+    div
+        h1
+            font-family: Bazar
+            font-size: 90px
+            text-transform: uppercase
+            padding-top: 42px
+            margin-bottom: 0px
+        img
+            width: 50%
+        h6:not(.imgh)
+            text-transform: uppercase
+            font-family: Oswald
+            margin-bottom: 33px
+        .imgh
+            font-family: RobotoSlab
+            font-size: 14px
+            text-align: center
+            text-transform: uppercase
+            margin-bottom: 14px
+=endsection()
+    .bar
+        width: 40px
+        height: 2px
+    .textbold
+        font-weight: bold
+        font-size: 14px
+        margin-top: 8px
+        margin-bottom: 0px
+    .marg
+        margin-top: 17px
+=filtres($right,$bottom,$border)
+        content: ""
+        display: inline-flex
+        width: 0
+        height: 0
+        border-top: $border solid transparent
+        border-right: $border solid white
+        border-bottom: $border solid transparent
+        position: relative
+        right: $right
+        bottom: $bottom
+body
+    margin: 0 
+    @media  ( max-width: 768px)
+        h1 
+            font-size: 72px!important
+        h2
+            font-size: 24px!important
+        h3
+            font-size: 20px!important
+header
+    width: 100%
+    max-height: 29%
+    background-color: #77B9B9
+    position: fixed
+    z-index: 3
+    div
+        display: flex
+        div
+            margin: $centralization
+        img
+            width: 21%
+        @media ( max-width: 768px)
+            p
+                font-size: 14px
+                margin-left: 20px
+                margin-top: 0
+                margin-bottom: 0
+            .bef-aft-img
+                margin-right: 20px
+            p:last-child
+                margin-left: 0px
+            p:first-child
+                margin-left: 0px           
+        @media ( min-width: 769px)   
+            p
+                font-size: 27px
+                margin-left: 50px
+                margin-bottom: 35px
+            .bef-aft-img
+                margin-right: 50px
+            p:last-child
+                margin-left: 0px
+            p:first-child
+                margin-left: 0px
+        p
+            font-family: Bazar
+            color: #F9EBD9
+            text-transform: uppercase
+.sectionone
+    background-color: #79B9B9
+    .row
+        margin: 0
+    h1
+        font-size: 111px
+        font-family: SeasideResortNF
+        margin-top: 20%
+    img
+        width: 50%
+        height: 50%
+        margin-bottom: 30px
+    #ribbon   
+        margin-top: 30px
+    #text
+        text-align: center
+        text-transform: uppercase
+        font-family: Bazar
+        color: white
+    h2
+        font-size: 32px
+    h3
+        font-size: 27px
+        margin: 0px
+        padding-bottom: 30px
+.sectiontwo
+    background-color: #E1DCCC
+    min-height: 800px
+    +startsection()
+    div
+        div 
+            padding-bottom: 30px   
+            .pdiv    
+               padding: 0 15px 0 15px
+        .padnul
+            padding-right: 0px
+            padding-left: 0px
+        .hw
+            width: 150px
+            height: 150px
+            display: block
+            margin: 0 auto
+        h3
+            font-family: Bazar
+            font-size: 27px
+            text-transform: uppercase
+            text-align: center
+            margin: 21px 0 14px 0
+        .liniablack
+            width: 40px
+            height: 3px
+        .liniaCenter
+            width: fit-content
+            margin: $centralization
+        span:not(#other)
+            font-weight: bold
+        #other
+            text-decoration: underline
+        p
+            font-family: RobotoSlab
+            margin: 0px
+            font-size: 14px
+.sectionthree
+    background-color: #DE8564
+    width: 100%
+    +startsection()
+    .dis
+        display: contents
+    .wi
+        width: 15%
+    .wi:not(.last)
+        margin-right: 15px
+        margin-bottom: 15px
+    .last
+        margin-bottom: 15px
+    @media ( max-width: 768px)    
+        #filtres-adap
+            margin: 0
+    .filtres
+        background-color: white
+        height: 14px
+        vertical-align: middle
+        padding: 0
+        min-width: 30px
+        border: transparent
+        border-radius: 0 3px 3px 0
+        font-size: 8px
+        font-weight: bold
+        padding-right: 10px
+    .filtres:not(:last-child)
+        margin-right: 15px
+    .filtres:first-child
+        margin-left: 15px
+    .filtres-one:before
+        +filtres(7px,2px,7px)
+    .filtres-two:before
+        +filtres(7px,2px,7px)
+    .filtres-three:before
+        +filtres(7px,2px,7px)
+    .filtres-four:before
+        +filtres(7px,2px,7px)
+    .filtres-five:before
+        +filtres(7px,2px,7px)
+    .filtres-six:before
+        +filtres(7px,2px,7px)
+    .filtres-seven:before
+        +filtres(7px,2px,7px)
+    .filtres-eight:before
+        +filtres(7px,2px,7px)
+    #filtres-name
+        font-size: 12px
+        display: inline-block
+        margin-right: 15px
+    +endsection
+.sectionfour
+    +startsection()
+    background-color: #DCD9D7
+    .backfour
+        background-color: #E3DFD7
+        border: solid white 1px
+        height: 214px
+        display: inline-block
+        margin-bottom: 20px
+        margin-right: 20px
+    @media  ( max-width: 1366px )
+        .divdis
+            display: block!important
+    .disfour
+        display: flex
+        list-style-type: none
+        margin: 0px
+        padding: 0px
+        text-transform: uppercase
+        font-family: oswald
+        font-size: 10px
+        font-weight: bold
+    .no
+        font-weight: 100
+    .posfour
+        position: relative
+        bottom: 10px
+        width: 40px
+        height: 2px
+        padding: 0px
+    .divpos
+        padding: 0px
+        p
+            font-family: RobotoSlab
+    .divdis
+        display: flex
+    .pad
+        padding: 0
+
+    h4
+        font-family: RobotoSlabBold
+        font-weight: bold
+    +endsection
+.lastsection
+    background-color: #4c5057
+    +startsection
+    .new
+        color: #F6EDD8     
+    .form
+        width: 100%
+        border-radius: 5px
+    .form:not(.buttonform)
+        margin-bottom: 10px
+        padding: 13px 0 13px 8px
+        font-family: RobotoSlab
+        font-size: 16px
+    .formdiv
+        max-width: 480px
+        margin: 0 auto
+    .buttonform
+        font-weight: bold
+        width: 140px
+        height: 40px
+        font-family: RobotoSlabBold
+        font-size: 16px
+        background-color: white
+    #inputheight
+        height: 163px
+    .bar
+        width: 40px
+        height: 2px
+        margin-bottom: 15px
+    .textbold
+        font-size: 24px
+        margin-top: 40px
+        margin-bottom: 8px!important
+        color: #F6EDD8
+        font-family: Bazar!important
+    div
+        .imgseti
+            width: 7%
+        .imgseti:not(:last-child)
+            margin-right: 10px
+    #social
+        padding-bottom: 73px
+
+
+
+        

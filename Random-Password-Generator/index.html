@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>RandPassGen</title>
+</head>
+<body>
+    <div class="content">
+        <input type="text" readonly id="password">
+        <p class="checkbox-item">
+            Длина пароля:<input id="pass-length" type="number" max="99" min="1" required>
+        </p>
+        <p class="checkbox-item"><input class="checkbox" id="numbers" type="checkbox">Выкл цифры (0-9)</p>
+        <p class="checkbox-item"><input class="checkbox" id="big-caracters" type="checkbox">Выкл заглавные буквы (A-Z)</p>
+        <p class="checkbox-item"><input class="checkbox" id="small-caracters" type="checkbox">Выкл маленкие буквы (a-z)</p>
+        <button type="submit" id="btn"> Generate</button>        
+    </div>
+
+    <script src="./app.js"></script>
+</body>
+</html>

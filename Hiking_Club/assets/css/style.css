@@ -1,0 +1,70 @@
+.bg-color-one {
+  background-color: blue;
+  height: 100px;
+}
+
+.bg-color-two {
+  background-color: red;
+  height: 100px;
+}
+
+.bg-color-three {
+  background-color: green;
+  height: 100px;
+}
+
+.bg-color-four {
+  background-color: yellow;
+  height: 100px;
+}
+
+.bg-color-five {
+  background-color: pink;
+  height: 100px;
+}
+
+.bg-color-six {
+  background-color: aqua;
+  height: 50px;
+}
+
+.bg-color-seven {
+  background-color: darkblue;
+  height: 50px;
+}
+
+svg {
+  color: red;
+  width: 50px;
+  height: 50px;
+}
+
+#button-icons {
+  padding: 20px 50px;
+  border: none;
+  outline: none;
+}
+
+img:not(.wdt-img-card) {
+  height: auto;
+  max-width: 30%;
+}
+
+#fixed {
+  height: 400px;
+  border-top: 4pxsolid #f0f0f0;
+  border-bottom: 4pxsolid #f0f0f0;
+  background: url(https://storge.pic2.me/upload/312/57d92f3657b3a.jpg) no-repeat center center fixed;
+  background-blend-mode: multiply;
+  color: lightblue;
+  background-size: cover;
+  -o-background-size: cover;
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+}
+/*# sourceMappingURL=style.css.map */

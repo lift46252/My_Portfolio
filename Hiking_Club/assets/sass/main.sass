@@ -1,0 +1,338 @@
+$h: 800px
+$left: 5%
+/** Slider **/
+@media  ( max-width: 1366px)
+    .mobile-display-none
+        display: none!important
+.swiper-container 
+    width: 100%
+    height: 100%
+    padding-bottom: 30px
+    position: relative
+@media ( min-width: 1366px)
+    .swiper-container
+        right: -6%
+#hide-content
+    overflow: hidden
+    margin: 0
+.swiper-pagination
+    position: absolute
+    bottom: 10px
+    left: 20%
+    width: fit-content
+    font-family: Montserrat-Regular
+    font-size: 21px
+    color: #DADADA
+.btn-arr-prev
+    transform: rotate(180deg)
+    padding-bottom: 0.143%
+    left: 36%
+.btn-arr-next
+    left: 4%
+.btn-arr-prev,.btn-arr-next
+    width: 13%
+    height: 9%
+    outline: none
+    display: inline-flex
+    position: absolute
+    bottom: 10px
+ 
+.swiper-pagination-current
+    font-family: Montserrat-Regular
+    font-size: 33px
+    color: #000000
+.swiper-slide 
+    text-align: center
+    font-size: 18px
+    background: #fff
+    height: 453px!important
+#first-slide
+    background-image: url(../img/Layer-2.png) 
+    background-size: cover
+#second-slide
+    background-image: url(../img/Layer-3.png) 
+    background-size: cover
+#third-slide
+    background-image: url(../img/Layer-4.png) 
+    background-size: cover
+.swiper-slide-active
+    box-shadow: 20px 20px 15px rgba(0,0,0,0.3)
+
+    /* Center slide text vertically */
+    display: -webkit-box
+    display: -ms-flexbox
+    display: -webkit-flex
+    display: flex
+    -webkit-box-pack: center
+    -ms-flex-pack: center
+    -webkit-justify-content: center
+    justify-content: center
+    -webkit-box-align: center
+    -ms-flex-align: center
+    -webkit-align-items: center
+    align-items: center
+    /** Header **/
+header
+    background-image: url(../img/Hills.png)
+    background-size: cover
+    height: $h
+    background-position-y: -100px 
+nav 
+    font-family: Montserrat-Bold
+    font-size: 16.67px
+nav div
+    justify-content: flex-end
+@media ( min-width: 1366px)
+    header .container-fluid,#These-Best-Treks-For-Spring
+        padding-left: $left
+        padding-right: 0
+@media ( max-width: 1366px)
+    header .container-fluid
+        padding-left: $left
+        padding-right: 0
+    #These-Best-Treks-For-Spring
+        padding-left: $left
+        padding-right: $left
+@media ( min-width: 769px)
+    header .text-header
+        padding: 200px 0 0 0 
+        font-family: Montserrat-ExtraBold
+        h1
+            font-size: 74.5px
+        h3
+            font-size: 40px
+        p
+            font-size: 21px
+        button
+            font-size: 12.5px
+            color: white
+            background-color: black
+            padding: 21.5px 22.5px
+            border: none
+    .text-header::before
+        content: ""
+        display: block
+        width: 60px
+        height: 32px
+        background-image: url(../img/Butterfly-4.png)
+        background-size: cover
+        background-repeat: no-repeat
+        position: absolute
+        left: -5%
+        top: 30%
+    .text-header::after
+        content: ""
+        display: block
+        width: 63.4px
+        height: 41.1px
+        background-image: url(../img/Butterfly-3.png)
+        background-size: cover
+        background-repeat: no-repeat
+        position: absolute
+        left: 58%
+        top: 18%
+    header .img-header::after
+        content: ""
+        display: block
+        height: 900px
+        background-image: url(../img/img_header.png)
+        background-size: cover
+        background-repeat: no-repeat
+#button-out-one,#button-out-two
+    outline: none!important
+@media (max-width: 767px )
+    header .img-header::after
+        display: none!important    
+@media (max-width: 769px )
+    header .img-header::after
+        content: ""
+        display: block
+        height: 600px
+        background-image: url(../img/img_header.png)
+        background-size: cover
+        background-repeat: no-repeat
+        background-size: 150%
+        background-position-y: 50%
+    header .text-header
+        padding: 150px 0 0 0
+        font-family: Montserrat-ExtraBold
+        h1
+            font-size: 50px
+        h3
+            font-size: 30px
+        p
+            font-size: 16px
+        button
+            font-size: 12.5px
+            color: white
+            background-color: black
+            padding: 21.5px 22.5px
+            border: none
+@media (min-width: 1250px) and (max-width: 1500px)
+    header .img-header::after    
+        background-position-x: 15%
+@media (min-width: 1800px)
+    header .img-header::after    
+        background-position-x: -125%
+header .img-header
+    padding: 0
+    /** section one **/
+#These-Best-Treks-For-Spring
+    margin-top: 8.9%
+    margin-bottom: 7.55%
+    h1,h2 
+        font-family: Montserrat-Bold
+    h1
+        font-size: 54px
+    h2
+        font-size: 41.6px
+        color: #DADADA
+    p
+        font-family: Montserrat-Regular
+        font-size: 21px
+    /** Section two **/
+    /** #Hiking-Organization **/
+    #fixed
+        height: 400px
+        width: 100%
+        border-top: 4pxsolid #f0f0f0
+        border-bottom: 4pxsolid #f0f0f0
+        background: url(../img/Layer-1.png) no-repeat center center fixed
+        background-size: cover
+        -o-background-size: cover // opera
+        -moz-background-size: cover // mozila
+        -webkit-background-size: cover // safari
+        background-blend-mode: multiply
+        background-color: rgba(0,0 ,0 ,0.4 )
+        text-align: center
+        color: white
+        div
+            position: relative
+            top: calc( 50% - 84px )
+
+    @media ( min-width: 767px )
+        #fixed h1
+            font-family: Montserrat-Bold
+            font-size: 46px
+        #fixed h6
+            font-family: Montserrat-Regular
+            font-size: 21px
+    @media ( max-width: 767px )
+        #fixed h1
+            font-family: Montserrat-Bold
+            font-size: 30px
+        #fixed h6
+            font-family: Montserrat-Regular
+            font-size: 16px
+    /** section three **/
+#Want-To-Stay 
+
+    margin-top: 5.8%
+    margin-bottom: 4.95%
+    h1
+        font-size:  46px
+        font-family: Montserrat-Bold
+    p
+        font-size: 21px
+        font-family: Montserrat-Regular
+    button
+        font-size: 12.5px
+        font-family: Montserrat-ExtraBold
+        color: white
+        background-color: black
+        padding: 21.5px 25.5px
+        border: none
+    @media  ( min-width: 1800px)
+        #butterfly-two::before
+            content: ""
+            display: block
+            width: 60px
+            height: 32px
+            background-image: url(../img/Butterfly-2.png)
+            background-size: cover
+            background-repeat: no-repeat
+            position: absolute
+            right: 18%
+            top: 40%
+        #butterfly-two::after
+            content: ""
+            display: block
+            width: 63.4px
+            height: 41.1px
+            background-image: url(../img/Butterfly-3.png)
+            background-size: cover
+            background-repeat: no-repeat
+            position: absolute
+            left: 35%
+            top: 0
+        ::after
+            content: ""
+            display: block
+            width: 23px
+            height: 19.5px
+            background-image: url(../img/Butterfly-1.png)
+            background-size: cover
+            background-repeat: no-repeat
+            position: absolute
+            left: -60%
+            top: 10%   
+    /** footer **/
+footer
+    padding: 0 57px 60px 57px
+    #footer-nav
+        padding: 0!important
+    #footer-container
+        background-color: #F3F3F3
+        padding: 60px 60px 50px 60px
+    #container-two
+        p
+            margin: 0
+    #container-one,#container-two,#container-three
+        align-self: flex-end!important
+    .social-margin:not(:last-child)
+        margin-right: 12px
+    .telephone
+        font-family: Montserrat-ExtraBold
+        color: white
+        width: fit-content
+        display: inline-block
+        #text
+            span
+                background-color: black    
+            width: fit-content
+            font-size: 22.3px
+            margin: 0 16px -1px 0
+        #numbers
+            font-size: 32.6px
+            background-color: black
+            width: fit-content
+    /** media **/
+@media ( max-width: 1366px)
+    #mobile-text,#container-three
+        text-align: center!important
+    #container-one
+        justify-content: center
+        display: grid
+        padding-top: 30px
+    #container-two
+        margin-bottom: 16px
+    #img-section-three
+        width: -webkit-fill-available
+    #numbers
+        font-size: 27px!important
+@media ( max-width: 767px )
+    #footer-container
+        padding: 15px 15px 10px 15px!important
+    footer 
+        #button-out-two,.navbar-brand
+            margin: 0 auto
+    /** fonts **/
+@font-face 
+    font-family: Montserrat-Regular
+    src: url(../fonts/Montserrat/Montserrat-Regular.ttf)
+@font-face 
+    font-family: Montserrat-Bold
+    src: url(../fonts/Montserrat/Montserrat-Bold.ttf)
+@font-face 
+    font-family: Montserrat-ExtraBold
+    src: url(../fonts/Montserrat/Montserrat-ExtraBold.ttf)
